@@ -1,0 +1,75 @@
+/* 页脚顶部 */
+footer .footer_top{
+    padding:50px 0;
+    border-bottom:1px solid #aaa;
+    justify-content: space-around;
+}
+.footer_top img{
+    vertical-align: middle;
+    margin-right:20px;
+}
+.footer_top span{
+    color:#2b2b2b;
+    font-size:18px;
+}
+/* 页脚中部 */
+ul.footer_middle{
+    justify-content: space-around;
+    padding:50px 0;
+    border-bottom:1px solid #aaa;
+}
+.footer_middle>li{
+    text-align:center;
+}
+/* 左边标题样式 */
+.footer_middle h3{
+    font-size:16px;
+    color:#2f2f2f;
+    margin-bottom:8px;
+}
+/* 链接 */
+.footer_middle p a{
+    font-size:14px;
+    color:#9fa0a0;
+    line-height:25px;
+}
+.footer_middle p a:hover{
+    text-decoration: underline;
+}
+.footer_middle img+p{
+    color:#9fa0a0;
+    font-size:14px;
+}
+/* 页脚底部 */
+.footer_bottom{
+    padding:25px 0 50px;
+}
+.footer_bottom p{
+    font-size:12px;
+    color:#939191;
+}
+.footer_bottom a{
+    font-size:12px;
+    color:#939191;
+}
+.footer_bottom a:hover{
+    text-decoration: underline;
+}
+.footer_bottom span{
+    margin:0 5px;
+    color:#939191;
+}
+.footer_bottom>div:last-child a{
+   display: inline-block;
+}
+.footer_bottom>div:last-child a:not(:last-child){
+    padding-right:8px;
+}
+.footer_bottom>div:last-child a+a{
+    padding-left:10px;
+    border-left: 1px solid #939191;
+}
+
+.footer_bottom>div:last-child span{
+    font-size: 37px;
+}

@@ -1,0 +1,90 @@
+/* 顶部 */
+.header_top{
+    padding:6px 0;
+    background:#fafafa;
+    border-bottom:1px solid #aaa;
+}
+/* 图片对齐方式 */
+.header_top img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.header_top a+a{
+    margin-left:15px;
+}
+/* a标签 字体样式*/
+.header_top a{
+    font-size:14px;
+    color:#a5a5a5;
+}
+.header_top span{
+    margin:0 15px;
+}
+/* 底部 */
+.bottom{
+    margin-top:25px;
+}
+.bottom a{
+    display:inline-block;
+}
+.bottom img.home{
+    margin-right: 10px;
+    position: relative;
+    top:3px;
+}
+/* 首页a标签样式 */
+.bottom a.index{
+    width:80px;
+    height:35px;
+    background:blueviolet;
+    text-align: center;
+    border-radius: 5px;
+    margin-left:15px;
+    color:#fff;
+    line-height: 35px;
+    position:relative;
+    top:-13px;
+}
+/* 搜索框 */
+.bottom input{
+    width:400px;
+    height:40px;
+    border:1ps solid #aaa;
+    outline:0;
+    padding:5px 15px;
+}
+/* 搜索图片 */
+.bottom .cx{
+    height:40px;
+    width:40px;
+    border:1px solid #aaa;
+    position: relative;
+    top:15px;
+    left:-6px;;
+}
+/* 购物车按钮 */
+.bottom a.cart{
+    height:40px;
+    width:100px;
+    border-radius: 5px;
+    background:url(../img/cartp.png) no-repeat 14px 13px ;
+    background-color:#0c82d9;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    font-size: 14px;
+    transition:1s;
+}
+.bottom a.cart span{margin-left:25px;}
+/* 购物车按钮鼠标悬停 */
+.bottom a.cart:hover{
+    background-color:#fff;
+    color:#0c82d9;
+    background-image:url(../img/cart.png);
+    border:1px solid #0c82d9;
+}
+/* 右边盒子自身位置微调 */
+.bottom>div:last-child{
+    position: relative;
+    top:-13px;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/comm.css">
+</head>
+<body>
+    <!-- =================页头================ -->
+    <header>
+        <div class="header_top">
+            <ul class="box">
+                <li>
+                    <img src="./img/collect.jpg" alt=""><a href="#">收藏</a>
+                    <a href="#"><img src="./img/weixin1.jpg" alt="">微信</a>
+                </li>
+                <li>
+                    <a href="login.html" traget="_blank">登录</a>
+                    <span>|</span>
+                    <a href="reg.html" traget="_blank">注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom box">
+            <div>
+                <a href="index.html"><img src="./img/logo.gif" alt="" class="logo"></a>
+                <a href="index.html" class="index"><img src="./img/home.png" class="home">首页</a>
+            </div>
+            <div >
+                <input type="text" name="search" placeholder="剃须刀">
+                <a href="#" class="cx">
+                    <img src="./img/searchbg.png" alt="">
+                </a>
+                <a href="#" class="cart">
+                    <!-- <img src="./img/cartp.png" alt=""> -->
+                    <span>购物车</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ===========主体内容============== -->
+    <div class="step" >
+        <div class="step_1"><img src="./img/cart/cart_tit.png" alt=""></div>
+        <div class="step_2"><img src="./img/cart/submitbg.png" alt=""></div>
+        <div class="step_3"><img src="./img/cart/order_success_tit.png" alt=""></div>
+    </div>
+   <!--购物车商品详情 -->
+    <table class="carts">
+        <thead>
+            <tr>
+                <th class="col_one"><input type="checkbox" id="qx"> <label for="qx">全选</label></th>
+                <th class="col_two">商品</th>
+                <th class="col_three">单价</th>
+                <th class="col_four">数量</th>
+                <th class="col_five">小计</th>
+                <th class="col_six">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>
+                    <img src="./img/FH6273.png" alt="">
+                    <span>FH6273 </span>
+                    <span> 飞科电吹风FH6273</span>
+                </td>
+                <td><span>￥79.00</span></td>
+                <td>
+                    <button>-</button><input type="text" value=1><button>+</button>
+                </td>
+                <td><span class="sum">￥79.00</span></td>
+                <td><a href="#" class="cancel">删除</a></td>
+            </tr>
+            <tr>
+                <td ><input type="checkbox"></td>
+                <td>
+                    <img src="./img/FS2000.png" alt="">
+                    <span>FS2000 </span>
+                    <span> 飞科插座FS2000</span>
+                </td>
+                <td><span>￥59.00</span></td>
+                <td>
+                    <button>-</button><input type="text" value=1><button>+</button>
+                </td>
+                <td><span class="sum">￥59.00</span></td>
+                <td><a href="#"class="cancel">删除</a></td>
+            </tr>
+        </tbody>
+    </table> 
+    <div>
+        <p><a>清空购物车</a><a>删除选中项</a></p> 
+        <div>
+            <p>
+                <span>商品总计:</span>
+                <i>￥</i>
+                <big>138.00</big>
+                <em>元</em>
+            </p>
+            <p><button>继续购物</button><button>去结算</button></p>
+        </div>
+    </div>
+    <!-- ======================页脚============================ -->
+    <footer class="m_over">
+        <ul class="footer_top box">
+            <li> <img src="./img/ensure.png" alt=""><span>领导品牌 品质保证</span></li>
+            <li> <img src="./img/return.png" alt=""><span>7天退货 15天换货</span></li>
+            <li> <img src="./img/free.png" alt=""><span>全场免运费（部分配件除外）</span></li>
+            <li> <img src="./img/unprofor.png" alt=""><span>全国网点 联保服务</span></li>
+        </ul>
+        <ul class="footer_middle box">
+            <li>
+                <h3>购物服务</h3>
+                <p><a href="#">购物指南</a></p>
+                <p><a href="#">配送方式</a></p>
+                <p><a href="#">支付方式</a></p>
+            </li> 
+            <li>
+                <h3>服务支持</h3>
+                <p><a href="#">售后网点</a></p>
+                <p><a href="#">积分规则</a></p>
+                <p><a href="#">保修政策</a></p>
+            </li>
+            <li>
+                <h3>关注我们</h3>
+                <p><a href="#">新浪微博</a></p>
+                <p><a href="#">关注微信</a></p>
+                <p><a href="#">APP下载</a></p>
+            </li>
+            <li>
+                <h3>关于飞科</h3>
+                <p><a href="#">飞科介绍</a></p>
+                <p><a href="#">飞科新闻</a></p>
+                <p><a href="#">联系我们</a></p>
+            </li> 
+                
+            <li>
+                <img src="./img/qr_code.jpg" alt="">
+                <p>关注飞科电器官方微信</p>
+            </li>  
+            <li>
+                <img src="./img/service1.png" alt="">
+            </li>  
+        </ul>
+        <div class="box footer_bottom">   
+            <img src="./img/minilogo.jpg" alt="">
+            <div>
+                <p>Copyright © 2013-2016上海飞科电器股份有限公司 | 版权所有 | 网站备案/许可证号：沪ICP备13041208号</p>
+                <a href="#">
+                        增值电信营业经营许可认证:沪B2-20160083</a>
+                <span>|</span>
+                <a href=""><img src="./img/fkab.png" alt="">沪公网安备 31010502001341号</a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/rightimg1.jpg" alt=""></a>
+                <a href="#"><img src="./img/rightimg2.jpg" alt=""></a>
+                <a href="#"><img src="./img/rightimg3.jpg" alt=""></a>
+                <a href="#"><img src="./img/rightimg4.jpg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // 购物车的计算
+        (function(){
+        //商品数量增减事件
+            // 确定触发事件的元素
+            var btns=document.querySelectorAll(".carts>tbody button");
+            console.log(btns)
+            //遍历元素，绑定事件
+            for(var btn of btns){
+                btn.onclick=function(){
+                    // 绑定当前元素对象
+                    var btn=this;
+                    // 确定要修改的元素
+                    var input=btn.parentNode.children[1];
+                    // 商品数量
+                    var n=parseInt(input.value)
+                    if(btn.innerHTML=="-"){
+                        // 当按钮为减号是，商品数量减一
+                        if(n>1){
+                            n--;
+                        }
+                    }else{
+                        // 当按钮为加号，商品数量加一
+                        n++;
+                    }
+                    input.value=n;
+                    // 单个商品小计
+                    // 商品单价
+                    var price=btn.parentNode.previousElementSibling.children[0].innerHTML.slice(1);
+                    // 要修改的元素
+                    btn.parentNode.nextElementSibling.children[0].innerHTML="￥"+(parseFloat(price)*n).toFixed(2);
+                    // 商品总计
+                    var sums=document.getElementsByClassName("sum");
+                    var  total=0;
+                    for(var sum of sums){
+                        
+                        total+=parseFloat(sum.textContent.slice(1))
+                    }
+                    console.log(total)
+                    document.querySelector(".carts+div big").innerHTML=total.toFixed(2)
+                }
+            }
+         })();
+    //商品全选 
+        (function(){
+           var chbAll=document.querySelector(".carts thead input");
+           var chbs=document.querySelectorAll(".carts tbody td:first-child input ")
+        //   绑定全选事件
+            chbAll.onclick=function(){  
+                for(var chb of chbs){
+                    chb.checked=chbAll.checked;
+                }
+            }
+        // 绑定事件 当商品有一个没被选中时，全选框也不全选
+            for(var chb of chbs){
+                chb.onclick=function(){
+                    // 绑定当前元素对象
+                    var chb=this;
+                    if(chb.checked==false){
+                        chbAll.checked=false;
+                    }else{
+                        // 没被选中的元素
+                        var unchecked=document.querySelector(".carts tbody td:first-child input:not(:checked)");
+                        if(unchecked==null){//没有没被选中的元素
+                          chbAll.checked=true;  
+                        }else{
+                            chbAll.checked=false;
+                        }
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

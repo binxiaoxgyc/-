@@ -1,0 +1,132 @@
+/* 下单流程 */
+.step{
+    width:1240px;
+    height:40px;
+    margin:40px  auto;
+    position: relative;
+}
+.step_1,.step_2,.step_3{
+    position: absolute;
+}
+.step_1{
+    z-index: 1;
+}
+/* 购物车列表 */
+table.carts{
+    width:1240px;
+    margin:30px auto 15px;
+    border-spacing: 0;
+}
+thead th{
+    background: #f5f5f5;
+    padding:10px 0;
+    color:#999;
+}
+/* 第一行 */
+.carts  td{
+    padding:10px 10px ;
+    color:#666;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+/* 第一列 */
+.col_one{
+    width:60px;
+}
+.col_two{
+    width:600px;
+}
+.col_three{
+    width:200px;
+}
+.col_four{
+    width:200px;
+} 
+/* 增减按钮 */
+tbody td button{
+    width:25px;
+    height:25px;
+    border:1px solid #aaa;
+    background-color:#eee;
+    outline:none;
+    cursor: pointer;    
+}
+tbody button+input{
+    width:50px;
+    height:25px;
+    border:1px solid #ccc;
+    border-left:0;
+    border-right:0;
+    outline:0;
+    text-align: center;
+}
+/* 下边框 */
+tbody td{
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+tbody td img{
+    width:120px;
+    vertical-align:middle;
+}
+tbody td .sum{
+    font-size: 16px;
+    font-weight: 700;
+    color:blueviolet;
+}
+tbody td a.cancel{
+    color:#666;
+}
+.carts+div{
+    width:1240px ;
+    margin:25px auto;
+}
+.carts+div>div{
+    float:right;
+}
+.carts+div:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.carts+div>p>a{
+    display:inline-block;
+    background: url(../img/cart/del.png) no-repeat;
+    padding-left:22px;
+    margin-left:15px;
+    color:#666;
+    cursor: pointer;
+}
+.carts+div p>button{
+    width:130px;
+    height:40px;
+    border:1px solid #aaa;
+    outline:0;
+    cursor: pointer;
+    margin-top:20px;
+}
+.carts+div p>button+button{
+    background: #ff7c44;
+    color:#fff;
+    border-left:0;
+}
+.carts+div p>span{
+    font-size: 15px;
+    color:#333;
+    margin-right:50px;
+}
+.carts+div big,i{
+    font-size:30px;
+    color:#ff7c44;
+    font-style: normal;
+}
+.carts+div i{
+    font-size: 14px;
+}
+.carts+div em{
+    color:#ff7c44;
+    font-size: 14px;
+    font-style: normal;
+
+}

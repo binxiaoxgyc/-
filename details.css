@@ -1,0 +1,384 @@
+/* 路径导航 */
+.path{
+    background: #f5f5f5;
+    padding:10px 0;
+}
+.path p{
+    width:1240px;
+    margin:0 auto;
+    color:#616161;
+}
+.path a{
+    color:#000;
+    font-size: 12px;
+}
+/* 商品详情内容 */
+.content{
+    width:1240px;
+    margin:0 auto;
+    padding:35px 0;
+    display:flex;
+    justify-content: space-between;
+}
+/* 左边部分边框 */
+.content .left{
+    border:1px solid #ddd;
+    padding:10px;
+    width:390px;
+}
+/* 大图片 */
+.content .left>div:first-child img{
+    width:370px;height:370px;
+}
+/* 左右箭头 */
+.left>div>a{
+    display:inline-block;
+    height:58px;
+}
+img.next,img.prev{
+    position: relative;
+    top:5px;
+}
+/* 小图 */
+.left img.laptop{
+    width:58px;
+    height:58px;
+    border:1px solid #ddd;
+    vertical-align: middle;
+    margin:2px 2px;;
+}
+.left img.laptop:hover{
+    border-color:blueviolet;
+}
+.content .right{
+    width:700px;
+}
+/*右边部分*/
+.right>h2{
+    font-size:24px;
+    color:#333;
+    padding-bottom:25px;
+}
+/* 文本内容通用样式 */
+.right>p{
+    font-size: 12px;
+    color:#818181;
+}
+/*到手价上下边距 */
+.right>p:nth-child(5){
+    margin:15px 0;
+    padding:20px 0;
+    border-top:1px dotted #818181;
+    border-bottom:1px dotted #818181;
+}
+.right>p:nth-child(5) i{
+    color:#ff7c44;
+    font-style:normal;
+}
+/* 价格 */
+.right>p:nth-child(5) big{
+    color:#ff7c44;
+    font-size: 32px;
+    font-weight: 700;
+}
+/* 月销售量 */
+.right>p:nth-child(7){
+    margin:15px 0;
+}
+/* 增与减按钮 */
+.right>p:nth-child(8)>button{
+    display:inline-block;
+    width:25px;
+    height:25px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    outline:none;
+    cursor: pointer;
+}
+/* 输入框 */
+.right>p:nth-child(8)>input{
+    width:50px;
+    height:25px;
+    border:1px solid #ccc;
+    outline:0;
+    text-align: center;
+} 
+/* 购买与加入购物车 */
+.right>p:nth-child(8)~button{
+    width:150px;
+    height:50px;
+    border-radius:3px;
+    margin:25px 10px 20px 0 ;
+    color:#fff;
+    font-size: 16px;
+    border:0;
+    cursor:pointer;
+    outline:none;
+}
+._shopping{
+    background: #df7141;
+}
+._cart{
+    background: #2264af;
+}
+/* =======全场免运费=========== */
+.right>li{
+    font-size: 14px;
+    color:#333;
+    margin-bottom:15px;
+}
+/* 收藏 */
+.right>a.sc{
+    color:#333;
+    background:url(../img/details/collectbg.png) no-repeat left center;
+    padding:20px;
+}
+/* 分享到 */
+.right>a.fx{
+    padding-left:18px; 
+    color:#666;
+    background-image:url(../img/details/icons_0_16.png);
+    background-repeat:  no-repeat;
+    background-position: 0 0;
+}
+/* 分享方式 */
+#fx_content_1,#fx_content_2{
+    display:none;
+}
+/* 新浪微博 */
+a.xlwb{
+    padding:10px;
+    background:url(../img/details/icons_0_16.png) no-repeat 0 -94px;
+}
+/* QQ空间 */
+a.qqkj{
+    padding:10px;
+    background:url(../img/details/icons_0_16.png) no-repeat 0 -41px;
+}
+/* 朋友圈 */
+a.wxpyq{
+    padding:10px;
+    background:url(../img/details/icons_0_16.png) no-repeat 0 -1601px;
+}
+
+/* ===================详情锚点====================== */
+ul.details_href{
+    width:800px;
+    display:flex;
+    margin:35px auto;
+}
+ul.details_href>li{
+    width:200px;
+    text-align: center;
+}
+ul.details_href>li~li{
+    border-left:1px solid #aaa;
+}
+/* 字体颜色大小 */
+ul.details_href>li>a{
+    font: 24px 微软雅黑;
+    font-weight: 500;
+}
+ul.details_href>li:first-child>a{
+    color:#2264af;
+}
+ul.details_href>li:not(:first-child)>a{
+    color:#000;
+}
+ul.details_href>li>a:hover{
+    color:#2264af;
+}
+/* ==================商品详情===================== */
+#s_details img{
+    width:100%;
+    min-width:1240px;
+    cursor: pointer;
+}
+/* 规格参数 */
+fieldset{
+    width:1240px;
+    margin:40px auto;
+    border-left:0;
+    border-bottom:0;
+    border-right:0;
+    border-top:2px solid #ddd;
+}
+fieldset legend{
+   text-align: center;
+   color:#333;
+}
+fieldset legend h2{
+    padding:0 50px;
+}
+fieldset~img{
+    width:100%;
+    min-width: 1240px;
+    cursor: pointer;
+}
+/* ==================商品评价 =====================*/
+#appraise{
+    background-color:rgba(246,153,175,0.25);
+    padding:10px 0 50px;
+}
+#appraise>ul{
+    width:1240px;
+    margin:0 auto;
+}
+/* =盒子内边距== */
+#appraise>ul>li{
+    padding-left:70px;
+}
+#appraise>ul ul{
+    display:flex;
+}
+
+#appraise>ul>li{
+    border:1px solid #aaa;
+}
+#appraise>ul>li~li{
+    border-top:0;
+    background: #fff;
+}
+/* 评价顶部 */
+#appraise>ul>li:first-child li{
+    width:150px;
+    color:#333;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding:15px 0;
+}
+/* 评价底部区域 */
+#appraise>ul>li:last-child>ul{
+  justify-content: space-between;
+  color:#333;
+  font-size: 13px;
+  padding:15px 10px 15px 0;
+}
+/* 发表评论 */
+#appraise>ul>li:last-child>ul>li:first-child{
+    border:1px solid #aaa;
+    padding:7px 15px;
+}
+/* 页码区 */
+#appraise .count,#appraise .count+span{
+    color:#000;
+    font-size: 12px;
+    margin-right:15px;
+}
+/* 页码输入框 */
+#appraise input.page{
+    width:50px;
+    height:25px;
+    text-align: center;
+    margin-right:15px;
+    outline:none;
+}
+/* 跳转按钮 */
+#appraise .GO{
+    width:80px;
+    height:25px;
+    text-align: center;
+    border:1px solid #aaa;
+    color:#333;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+#appraise .GO span{
+    display:inline-block;
+    border-left:5px solid #333;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid transparent;
+    position: absolute;
+    right:5px;
+    top:6px;
+}
+/* 评价内容 */
+.pinglun{
+    display: flex;
+    justify-content: space-between;
+    padding-right:70px;
+    padding-top:20px;
+}
+/*左右定宽 */
+.pinglun>div:first-child{
+    width:950px;
+}
+.pinglun>div:last-child{
+    width:150px;
+    margin-left:25px;
+}
+/* 字体通用样式 */
+.pinglun span,.pinglun p{
+    color:#aaa;
+    font-size: 12px;
+}
+/* 官方回复 */
+.reply{
+    background-color: rgba(246,153,175,0.25);
+    padding:10px 0;
+    margin:15px 0;
+}
+/*  */
+.pinglun b{
+    color:#df7141;
+    font-size: 14px;
+    padding-left:5px;
+}
+.pinglun>div>img{
+    vertical-align: middle;
+}
+.pinglun>div:last-child p{
+    line-height: 25px;
+    font-size: 14px;
+    color:#666;
+}
+/* ==================售后服务====================== */
+#post>div{
+    border:1px solid #ddd;
+    padding:30px;
+    margin-top:25px;
+}
+#post>div>p{
+    font-size: 14px;
+    color:#666;
+    line-height:30px;
+}
+/* ===============推荐商品==============*/
+ul.recommend{
+    margin-top:25px;
+    display:flex;
+    width:100%;
+}
+/* 边框 */
+ul.recommend>li{
+    width:310px;
+    border:1px solid #aaa;
+    text-align: center;
+    padding:10px 25px;
+}
+/* 去掉重合边框 */
+ul.recommend>li~li{
+    border-left:0;
+}
+/* 图片按比例缩小 */
+ul.recommend>li img{
+    width:100%;
+}
+/* 产品名称上下边距 */
+ul.recommend>li p{
+    margin-top:12px;
+    margin-bottom:7px;
+}
+/* 字体样式 */
+ul.recommend>li a{
+    color:#1b1b1b;
+    font-size:16px;
+}
+ul.recommend>li>span{
+    color:#aaa;
+    font-size: 14px;
+}
+

@@ -1,0 +1,224 @@
+/* 去除内外边距，统一样式 */
+*{ margin:0;padding:0;box-sizing: border-box;}
+/* 列表去点*/
+ul,ol,dl{list-style:none;}
+/* a标记去下划线 */
+a{ text-decoration:none;}
+/* 字体 */
+a,li,span,h1,h2,h3,h4,h5,h6,input{
+    font-family:SimSun,"Microsoft Yahei",Arial,sans-serif;
+}
+/* 上外边距溢出 */
+.m_over:before{
+    content:"";
+    display:table;
+}
+/* 弹性布局 居中 定宽 */
+.box{
+    width:1240px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+p.explain{
+    color:#b0b0b0;
+    font-size: 12px;
+}
+/* 微信 QQ精灵图 */
+a.wx{
+    display:inline-block;
+    width:33px;
+    height:33px;
+    background: url(../img/login/login_icon_bg.png) no-repeat 75% 0;
+}
+a.qq{
+    display:inline-block;
+    width:33px;
+    height:33px;
+    background: url(../img/login/login_icon_bg.png) no-repeat top left; 
+}
+a.qq:hover{
+    background-position:bottom left;
+}
+a.wx:hover{
+    background-position:75% 100%;
+}
+/* ================================头部======================================= */
+/* 顶部 */
+.header_top{
+    padding:6px 0;
+    background:#fafafa;
+    border-bottom:1px solid #aaa;
+}
+/* 图片对齐方式 */
+.header_top img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.header_top a+a{
+    margin-left:15px;
+}
+/* a标签 字体样式*/
+.header_top a{
+    font-size:14px;
+    color:#a5a5a5;
+}
+.header_top span{
+    margin:0 15px;
+}
+/* 底部 */
+.bottom{
+    margin-top:25px;
+}
+.bottom a{
+    display:inline-block;
+}
+.bottom img.home{
+    margin-right: 10px;
+    position: relative;
+    top:3px;
+}
+/* 首页a标签样式 */
+.bottom a.index{
+    width:80px;
+    height:35px;
+    background:blueviolet;
+    text-align: center;
+    border-radius: 5px;
+    margin-left:15px;
+    color:#fff;
+    line-height: 35px;
+    position:relative;
+    top:-13px;
+}
+/* 搜索框 */
+.bottom input{
+    width:400px;
+    height:40px;
+    border:1ps solid #aaa;
+    outline:0;
+    padding:5px 15px;
+}
+/* 搜索图片 */
+.bottom .cx{
+    height:40px;
+    width:40px;
+    border:1px solid #aaa;
+    position: relative;
+    top:15px;
+    left:-6px;;
+}
+/* 购物车按钮 */
+.bottom a.cart{
+    height:40px;
+    width:100px;
+    border-radius: 5px;
+    background:url(../img/cartp.png) no-repeat 14px 13px ;
+    background-color:#0c82d9;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    font-size: 14px;
+    transition:1s;
+}
+.bottom a.cart span{margin-left:25px;}
+/* 购物车按钮鼠标悬停 */
+.bottom a.cart:hover{
+    background-color:#fff;
+    color:#0c82d9;
+    background-image:url(../img/cart.png);
+    border:1px solid #0c82d9;
+}
+/* 右边盒子自身位置微调 */
+.bottom>div:last-child{
+    position: relative;
+    top:-13px;
+}
+/* =======================================页脚================================================ */
+/* 页脚顶部 */
+footer .footer_top{
+    padding:50px 0;
+    border-bottom:1px solid #aaa;
+    justify-content: space-around;
+}
+.footer_top img{
+    vertical-align: middle;
+    margin-right:20px;
+}
+.footer_top span{
+    color:#2b2b2b;
+    font-size:18px;
+}
+/* 页脚中部 */
+ul.footer_middle{
+    justify-content: space-around;
+    padding:50px 0;
+    border-bottom:1px solid #aaa;
+}
+.footer_middle>li{
+    text-align:center;
+}
+/* 左边标题样式 */
+.footer_middle h3{
+    font-size:16px;
+    color:#2f2f2f;
+    margin-bottom:8px;
+}
+/* 链接 */
+.footer_middle p a{
+    font-size:14px;
+    color:#9fa0a0;
+    line-height:25px;
+}
+.footer_middle p a:hover{
+    text-decoration: underline;
+}
+.footer_middle img+p{
+    color:#9fa0a0;
+    font-size:14px;
+}
+/* 页脚底部 */
+.footer_bottom{
+    padding:25px 0 50px;
+}
+.footer_bottom p{
+    font-size:12px;
+    color:#939191;
+}
+.footer_bottom a{
+    font-size:12px;
+    color:#939191;
+}
+.footer_bottom a:hover{
+    text-decoration: underline;
+}
+.footer_bottom span{
+    margin:0 5px;
+    color:#939191;
+}
+.footer_bottom>div:last-child a{
+   display: inline-block;
+}
+.footer_bottom>div:last-child a:not(:last-child){
+    padding-right:8px;
+}
+.footer_bottom>div:last-child a+a{
+    padding-left:10px;
+    border-left: 1px solid #939191;
+}
+.footer_bottom>div:last-child span{
+    font-size: 37px;
+}
+/* 右下角固定插件 */
+.relation,.msg{
+    position:fixed;
+    width:80px;
+    height:60px;
+    right:0;
+}
+.relation{
+    bottom:90px;
+}
+.msg{
+    bottom:20px;
+}
