@@ -3,16 +3,18 @@ const express=require("express");
 const pool=require("../pool.js");
 //创建路由器
 var router=express.Router();
-//注册路由
+//登录路由
 router.post("/login",(req,res)=>{
 	var obj=req.body;
 	//判断非空
 	if(!obj.uname){res.send("2")}
 	if(!obj.upwd){res.send("3")}
 	//连接数据库，查询用户表
-	pool.query("select uname from user where uname=? and upwd=?",[obj.uname,obj.upwd],(err,result)=>{
+	pool.query("select uname,uid from user where uname=? and upwd=?",[obj.uname,obj.upwd],(err,result)=>{
 		if(err) throw err;
 		if(result.length>0){
+			req.session.uname=result[0].uname;
+			req.session.uid=result[0].uid
 			res.send("1");//1 表示登录成功
 		}else{
 			res.send("0");//0 表示用户名或密码错误
@@ -35,8 +37,16 @@ router.get("/reg_uname",function(req,res){
 router.post("/reg",function(req,res){
 	var obj=req.body;
 	pool.query("insert into user set uname=?,upwd=?,email=?,phone=?",[obj.uname,obj.upwd,obj.email,obj.phone],function(err,result){
+		
 		if(result.affectedRows>0){
-			res.send("1");//1表示注册成功
+			pool.query("select uid from user where uname=?",[obj.uname],function(err,result2){
+				if(err) throw err;
+				if(result2.length>0){
+					req.session.uid=result2[0].uid
+					res.send("1");//1表示注册成功
+				}
+			})
+			
 		}else{
 			res.send("0");//0表示注册失败
 		}
