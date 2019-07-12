@@ -90,14 +90,14 @@ tbody td a.cancel{
     display:block;
     clear:both;
 }
-.carts+div>p>a{
+.carts p>a{
     display:inline-block;
     background: url(../img/cart/del.png) no-repeat;
     padding-left:22px;
     margin-left:15px;
     color:#666;
     cursor: pointer;
-}
+}  
 .carts+div p>button{
     width:130px;
     height:40px;

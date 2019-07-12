@@ -1,3 +1,4 @@
+
 /* 顶部 */
 .header_top{
     padding:6px 0;
@@ -19,6 +20,9 @@
 }
 .header_top span{
     margin:0 15px;
+}
+.header_top .loginOut{
+	display:none;
 }
 /* 底部 */
 .bottom{

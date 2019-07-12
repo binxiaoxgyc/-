@@ -20,35 +20,95 @@
     display:flex;
     justify-content: space-between;
 }
-/* 左边部分边框 */
+/* 边框 */
 .content .left{
     border:1px solid #ddd;
     padding:10px;
-    width:390px;
+    width:392px;
 }
-/* 大图片 */
-.content .left>div:first-child img{
-    width:370px;height:370px;
+.left .left_top{
+    position: relative;
+    border:1px solid #aaa;
+    width: 370px;
+    height:370px;
+}
+/* 中图 */
+#md-img{
+    width: 368px;
+    height:368px;
+}
+/* 隔罩层 */
+#mask{
+    width:170px;
+    height:170px;
+    background-color:rgba(0,0,0,.1);
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+/* 隔离层 */
+#super-mask{
+    width:368px;
+    height:368px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/* 放大镜图片 */
+#div-lg{
+    width:340px;
+    height:340px;
+    position:absolute;
+    left:380px;
+    top:0;
+    background-size:700px 700px;
+    background-image:url("../img/details/1.src");
+    display:none;
+}
+.content .left>div:nth-child(2){
+    margin-top:15px;
 }
 /* 左右箭头 */
-.left>div>a{
+.content .left>div:nth-child(2)>img{
+    position:relative;
+    padding:18px 8px;
+    cursor:pointer;
+    opacity:0.5;
+    transition:all .3s linear
+}
+.content .left>div:nth-child(2)>img:hover{
+   opacity: 1;
+}
+/* 小图片 */
+#sm-imgs{
+    width:300px;
+    height:60px;
     display:inline-block;
-    height:58px;
+    overflow:hidden;
 }
-img.next,img.prev{
-    position: relative;
-    top:5px;
+#sm-imgs li{
+    width:60px;
+    height:60px;
+    float:left;
+    cursor:pointer;
+    padding:0 5px;
 }
-/* 小图 */
-.left img.laptop{
-    width:58px;
-    height:58px;
-    border:1px solid #ddd;
-    vertical-align: middle;
-    margin:2px 2px;;
+#sm-imgs li+li{
+    border-left:0;
 }
-.left img.laptop:hover{
-    border-color:blueviolet;
+/* 被选中状态 */
+#sm-imgs img.active{
+    border:1px solid blue;
+}
+/* 鼠标悬浮状态 */
+#sm-imgs img:hover{
+    border:1px solid blue;
+}
+#sm-imgs li>img{
+    width:55px;
+    height:55px;
+    border:1px solid #aaa;
 }
 .content .right{
     width:700px;
@@ -162,10 +222,66 @@ a.wxpyq{
 }
 
 /* ===================详情锚点====================== */
+/* 最外层div */
+div.fixed{
+   position:fixed;
+   top:0;
+   width:100%;
+   background:#fff; 
+}
+div.target{
+    width:1240px;
+    display:flex;
+    margin:auto;
+    justify-content:space-between;
+}
+.target-left,.target-right{
+    display:none;
+}
+/* 商品简介 */
+.target-left img{
+    width:60px;
+    margin-top:5px;
+    vertical-align: middle;
+}
+/* 隐藏 */
+
+.target-left div{
+    height:60px;
+    width:150px;
+    margin-left:10px;
+   display:inline-block;
+}
+.target-left div p.lname{
+    position: relative;
+    top:10px;
+    color:#666;
+    font-size:14px;
+}
+.target-left div p.price{
+    position: relative;
+    top:15px;
+    color:#df7141;
+    font-size:16px;
+    font-weight:bold;
+}
+.target-right button{
+    width:100px;
+    height:40px;
+    color:white;
+    margin-top:15px;
+    outline:none;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+    line-height:40px;
+}
+/* 锚点 */
 ul.details_href{
     width:800px;
     display:flex;
-    margin:35px auto;
+    margin:20px auto;
 }
 ul.details_href>li{
     width:200px;

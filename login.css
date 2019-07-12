@@ -105,7 +105,7 @@ input[type="submit"]{
 #uname+b,#phone+b{
     position: absolute;
     font-size:12px;
-    color:red;
+    color:blueviolet;
     left: 4px;
     top:38px;
 }

@@ -58,15 +58,17 @@
     outline:none;
     padding:5px 10px;
 }
-/* 消息提示提示行 */
+/* 消息提示行 */
 .reg ul li>span:only-child{
     display:block;
     margin-top:2px;
     height:20px;
     margin-bottom:10px;
-    color:green;
     font-size:12px;
 }
+.vali{color:blueviolet}
+.vali_success{color:purple;}
+.vali_fail{color:red}
 /* 用户协议 */
 .reg li:nth-child(12){text-align: center;font-size: 16px;}
 /* 注册按钮 */
